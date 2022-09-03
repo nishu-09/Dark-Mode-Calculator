@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        .switch{
+            opacity: 0;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header">
+                <div class="switchBox">
+                    <input type="checkbox" id="switch" class="switch"/>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <input type="text" class="text"id="text"placeholder="0">
+            
+            <button onclick="Clear()">AC</button>
+            <button onclick="del()">Del</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="calculate()" class="equal">=</button>
+            
+
+        </div>
+    </div>
+    <script src="jsfile.js"></script>
+</body>
+</html>

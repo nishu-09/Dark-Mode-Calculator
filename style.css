@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: mintcream;
+    font-family: sans-serif;
+    outline:none;
+}
+
+
+.container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: antiquewhite;
+    padding:15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #ffffff,5px 5px 5px rgba(0, 0, 0, .16);
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+.header{
+    width: 100%;
+    height:40px;
+    background:antiquewhite;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+.switchBox{
+    margin-left: 20px;
+    width:60px;
+    height: 25px;
+    background: #d8d8d8;
+    border-radius:20px;
+    position: relative;
+    /* cursor:pointer; */
+}
+.switchBox input{
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+}
+.switchBox .box{
+    position: absolute;
+    top:10%;
+    left:4px;
+    width: 20px;
+    height:80%;
+    background: #6d6d6d;
+    border-radius: 20px;
+    transition: all .4s;
+
+}
+.switchBox input:checked ~ .box{
+    left:60%;
+    background: #ff8303;
+}
+.pointer{
+    cursor: pointer;
+}
+.text{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, .16);
+    border:none;
+    border-radius: 30px;
+    color:rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding:20px
+}
+button{
+    height: 48px;
+    width:48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, .16);
+    border:none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+    
+}
+.equal{
+    width:115px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, .16);
+}
+button:hover{
+    background-color: azure;
+    
+}
+.newBgColor{
+   background-color: black;
+}
